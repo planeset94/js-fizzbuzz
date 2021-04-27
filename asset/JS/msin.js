@@ -9,7 +9,7 @@ var list= new Array();
 for (var i=1; i<=100; i++){
     if (i % 3 == 0 && i % 5 ==0){
         list.push("FizzBuzz");
-        
+
     } else if (i % 5 ==0) {
     list.push("Buzz");
 
@@ -20,11 +20,6 @@ for (var i=1; i<=100; i++){
     }  else{
         list.push(i);
     }
-
-
-
-
-
 }
 
-document.getElementById('stampa').innerHTML=list;
+document.getElementById('stampa').innerHTML=list.join('<br>');
